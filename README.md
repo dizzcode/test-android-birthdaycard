@@ -44,4 +44,31 @@ fun BackButtonHandler() {}
 fun drawProfileImage(image: ImageAsset) {}  
 
 
+### UI Hierarchy
+The UI hierarchy is based on containment, meaning one component can contain one or more components, and the terms parent and child are sometimes used. The context here is that the parent UI elements contain children UI elements, which in turn can contain children UI elements. In this section, you will learn about Column, Row, and Box composables, which can act as parent UI elements.  
 
+The three basic, standard layout elements in Compose are `Column, Row, and Box` composables. You learn more about the Box composable in the next codelab.  
+
+
+** It is a good practice to use padding values in increments of 4.dp **  
+
+** Adopt good practice  
+It is a good practice to pass the modifier attribute(s) along with the modifier from the parent composable. **  
+onCreate()  
+``
+Surface(
+//...
+) {
+GreetingText(
+message = "Happy Birthday Sam!",
+from = "From Emma",
+modifier = Modifier.padding(8.dp)
+)
+}
+``
+
+
+Jetpack Compose is a modern toolkit for building Android UI. Jetpack Compose simplifies and accelerates UI development on Android with less code, powerful tools, and intuitive Kotlin APIs.
+
+
+### Note 2
