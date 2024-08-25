@@ -14,9 +14,9 @@ name = "App Preview"
 )  
 @Composable  
 fun GreetingPreview() {  
-    HappyBirthdayTheme {  
-        Greeting("Android")  
-    }  
+     HappyBirthdayTheme {  
+      Greeting("Android")  
+     }  
 }  
   
 
@@ -26,12 +26,12 @@ The compose function that returns nothing and bears the `@Composable` annotation
 https://github.com/androidx/androidx/blob/androidx-main/compose/docs/compose-api-guidelines.md#naming-unit-composable-functions-as-entities
 
 The Compose function:  
->MUST be a noun: DoneButton()  
-NOT a verb or verb phrase: DrawTextField()  
-NOT a nouned preposition: TextFieldWithLink()  
-NOT an adjective: Bright()  
-NOT an adverb: Outside()  
-Nouns MAY be prefixed by descriptive adjectives: RoundIcon()   
+- MUST be a noun: DoneButton()  
+- NOT a verb or verb phrase: DrawTextField()  
+- NOT a nouned preposition: TextFieldWithLink()  
+- NOT an adjective: Bright()  
+- NOT an adverb: Outside()  
+- Nouns MAY be prefixed by descriptive adjectives: RoundIcon()   
 
 
 // Do: This function is a descriptive PascalCased noun as a non-visual element
@@ -50,21 +50,22 @@ The UI hierarchy is based on containment, meaning one component can contain one 
 The three basic, standard layout elements in Compose are `Column, Row, and Box` composables. You learn more about the Box composable in the next codelab.  
 
 
-** It is a good practice to use padding values in increments of 4.dp **  
+**It is a good practice to use padding values in increments of 4.dp**  
 
-** Adopt good practice  
-It is a good practice to pass the modifier attribute(s) along with the modifier from the parent composable. **  
-onCreate()  
+**Adopt good practice  
+It is a good practice to pass the modifier attribute(s) along with the modifier from the parent composable.**  
 ``
-Surface(
-//...
-) {
-GreetingText(
-message = "Happy Birthday Sam!",
-from = "From Emma",
-modifier = Modifier.padding(8.dp)
-)
-}
+onCreate()    
+
+  Surface(  
+  //...  
+  ) {  
+    GreetingText(  
+     message = "Happy Birthday Sam!",  
+     from = "From Emma",  
+     modifier = Modifier.padding(8.dp)  
+    )  
+  }  
 ``
 
 
