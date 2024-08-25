@@ -54,6 +54,7 @@ The three basic, standard layout elements in Compose are `Column, Row, and Box` 
 
 **Adopt good practice  
 It is a good practice to pass the modifier attribute(s) along with the modifier from the parent composable.**  
+
 ``  
 onCreate()    
 
@@ -73,3 +74,14 @@ Jetpack Compose is a modern toolkit for building Android UI. Jetpack Compose sim
 
 
 ### Note 2
+Images  
+https://developer.android.com/training/multiscreen/screendensities  
+When you resize images that are larger than the Android system can handle, an out-of-memory error is thrown. For photographs and background images, such as the current image, the androidparty.png, you should place them in the drawable-nodpi folder, which stops the resizing behavior.  
+
+resources  
+the res/ directory contains all the resources in subdirectories, which includes a drawable/ directory for an image resource, a mipmap/ directory for launcher icons, and a values/ directory for string resources. To learn more about the usage, format, and syntax for app resources, see  
+https://developer.android.com/guide/topics/resources/available-resources  
+
+Box layout is one of the standard layout elements in Compose. Use Box layout to stack elements on top of one another. Box layout also lets you configure the specific alignment of the elements that it contains.  
+
+
