@@ -54,7 +54,7 @@ The three basic, standard layout elements in Compose are `Column, Row, and Box` 
 
 **Adopt good practice  
 It is a good practice to pass the modifier attribute(s) along with the modifier from the parent composable.**  
-``
+``  
 onCreate()    
 
   Surface(  
@@ -66,7 +66,7 @@ onCreate()
      modifier = Modifier.padding(8.dp)  
     )  
   }  
-``
+``  
 
 
 Jetpack Compose is a modern toolkit for building Android UI. Jetpack Compose simplifies and accelerates UI development on Android with less code, powerful tools, and intuitive Kotlin APIs.
